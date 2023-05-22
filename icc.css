@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688),url(images/wc.jpg); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+
+}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin-top: -20px;
+    align-items: center;
+    margin-left: 1030px;
+}
+.navbar ul{
+    display: inline-block;
+    list-style: none;
+    height: 10px;
+    position: fixed;
+}
+.navbar ul li{
+    width: 120px;
+    margin: 50px;
+    height: 25px;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+.navbar ul li a{
+    color: white ;
+    text-decoration: none;
+   
+}
+.active, .navbar ul li:hover{
+   transition: .5s;
+   background: #009688;
+   width: 120px;
+   border-radius: 20px;
+   box-shadow: 0 5px 50px 0 #009688 inset,0 5px 50px 0 #009688;  
+}
+.content{
+    margin-left: 200px;
+    margin-top: 150px;
+}
+.content span{
+    margin-left: 200px;
+}
+h1{
+    margin: 10px 0 30px;
+    line-height: 80px;
+    font-family: curior;
+    margin-top: -130px;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/l396ISDU0oS6gDIUU/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
+
+}
+.btn{
+    width: 170px;
+    height: 70px;
+    margin-top: -60px;
+    margin-left: 40px;
+}
+button{
+    width: 150px;
+    height: 50px;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #e90202;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    animation: sample 1s infinite alternate;
+}
+@keyframes sample{
+    from{
+        box-shadow: 0 0 0 0 #e90202 inset,0 0 0 0 #e90202; 
+    }
+    to{
+       box-shadow: 0 5px 50px 0 #e90202 inset,0 5px 50px 0 #e90202; 
+    }
+}
+
